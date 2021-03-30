@@ -8,28 +8,3 @@
     padding-top: 20px;
     text-align: center;
 }
-
-/* Include any custom CSS styling here! */
-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%
-}
-body {
-    padding-top: 20px;
-    text-align: left;
-    background-size: cover;
-  }
-
-  h1, h2 {
-    display: inline-block;
-    background: #fff;
-  }
-  h1 {
-    font-size: 40px;
-    font-weight: 700px;
-  }
-  h2 {
-    font-size: 18px;
-    font-weight: 400px;
-  }
