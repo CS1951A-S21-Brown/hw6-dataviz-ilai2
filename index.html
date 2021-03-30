@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<body>
+
+    <head>
         <meta charset="utf-8">
         <title>Assignment 6 &laquo; Data Visualization Dashboard&raquo;</title>
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="main.css" />
         <!--Feel free to add more CSS files as needed-->
         <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
     </head>
-<body>
-    <div class="header">
-        <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo;</h3>
-    </div>
-    <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
-    <div class="row">
-        <div class="col-lg-6">
-            <div id="graph1"></div>
-            <div id="graph2"></div><br/>
+
+    <div>
+        <div class="header">
+            <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo; :) </h3>
         </div>
-        <div class="col-lg-6">
-            <div id="graph3"></div>
+        <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="graph1"></div>
+                <br />
+                <br />
+                <br />
+                <div id="graph2"></div><br />
+            </div>
+            <div class="col-lg-6">
+                <div id="graph3"></div>
+            </div>
         </div>
+        <!--Feel free to add more JavaScript files as needed-->
+        <script type="text/javascript" src="main.js"></script>
+        <h3>
+            Describe how your dashboard answers the questions presented. You don't have to address every question
+            directly,
+            but should at a high level address the main questions. (10 points)
+        </h3>
+
+        <body>
+            My first graph answers the first question by looking at the number of games played in the last 10 years.
+            This directly answers my boss's first question, which asked how many games were played in the past 5 years
+            at least.
+            <br>
+            My second graph answers the third questions by looking at the number of world cup games won in the last two
+            world cups by any country. I chose the metric of number of games won in a FIFA World Cup; this is pretty
+            okay metric, as the better you do in a World Cup, the more games you get to play. Thus, I believe this is a
+            good metric for us to determine who did well, as win percentage may be misleading.
+            <br>
+            The second question remains unanswered and is a mystery...I would have liked to create a map graph showing
+            the top 10 winningest countries out of the last 20 years by win percentage, but alas ran out of time.
+        </body>
+        <h3>
+            List 3 reasons why D3 was helpful and improved your visualization (6 points)
+        </h3>
+        <ol>
+            <li>D3 made it really easy for me to create a scale of colors to improve the aesthetics of my graph</li>
+            <li>D3, using the scaleBand and scaleLinear functions allowed me to create scales for my graph axes without
+                calculating manually what they should be</li>
+            <li>D3 allowed me to easily create axis labels and transform them as I pleased — if I had manually drawn
+                them, I would have to recalculate them if my data changed </li>
+        </ol>
+        <h3>
+            List 3 reasons why D3 would not be the best tool for creating a visualization (6 points)
+        </h3>
+        <ol>
+            <li>D3 could be difficult for non-technical people to understand and thus pose a high barrier of entry</li>
+            <li>D3 can only be used in JavaScript, so cannot be easily transferred to other mediums like print</li>
+            <li>D3 is not as customizable as programs like Adobe Illustrator, where every possible attribute can be
+                changed exactly as you please very easily</li>
+            <li>D3 doesn't always support older browsers</li>
+        </ol>
+        <h3>
+            Evaluate the accessibility of your dashboard based on the readings in the “Before you begin” section. What
+            kinds of users might find this dashboard accessible and who might have more difficulty? What additional
+            actions might you take to make this dashboard more accessible to all audiences? Your response should refer
+            to at least one of the readings and be about 1 paragraph.
+        </h3>
+
+        <body>
+            My dashboard accessibility is quite horrendous. First, there are no tooltips. Second, the text on some of
+            the axes are quite small. However, things are well segmented in to structural elements, which makes it easy
+            to navigate for screen readers. There are also no audio components, which make it very accessible to the
+            deaf. Additionally, there is a small animation which may be distracting to those with ADHD (as mentioned in
+            the article "Why Accessibility Is at the Heart of Data Visualization") I could add tool
+            tips and remove animations, as well as making the fonts larger.
+        </body>
+        <h3>
+            Reflect on the stages of your design and implementation process when you could have taken steps to make your
+            dashboard more accessible to all audiences. What are some factors that kept you from taking these steps? (a
+            few sentences)
+        </h3>
+
+        <body>
+            I should have spent a lot more time planning. To be honest, that was definitely the biggest downfall.
+            Probably my poor mental health and lack of motivation in school during a global pandemic stopped me from
+            doing my best on this assignment, including adding more features that are accessible to everyone. However,
+            since the site is relatively simple, I believe it's also mostly accessible.
+        </body>
     </div>
-    <!--Feel free to add more JavaScript files as needed-->
-    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
